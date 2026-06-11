@@ -14,20 +14,20 @@
 		"UV_LINK_MODE": "copy",
 		"UV_PROJECT_ENVIRONMENT": "${workspaceFolder}/.venv"
 	},
-	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"installZsh": false,
-			"installOhMyZsh": false,
-			"upgradePackages": false,
-			"username": "vscode",
-			"uid": "1001",
-			"gid": "1001"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"version": "latest",
-			"ppa": false
-		}
-	},
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/common-utils:2": {
+	// 		"installZsh": false,
+	// 		"installOhMyZsh": false,
+	// 		"upgradePackages": false,
+	// 		"username": "vscode",
+	// 		"uid": "1001",
+	// 		"gid": "1001"
+	// 	},
+	// 	"ghcr.io/devcontainers/features/git:1": {
+	// 		"version": "latest",
+	// 		"ppa": false
+	// 	}
+	// },
 	"customizations": {
 		"vscode": {
 			"extensions": [
