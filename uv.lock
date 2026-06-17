@@ -268,6 +268,22 @@ wheels = [
 ]
 
 [[package]]
+name = "captum"
+version = "0.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "torch" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/9e/f31758e20c3d2b42b05420936b75f663e7aeae9ba63b84aee5cad1b044a3/captum-0.9.0.tar.gz", hash = "sha256:e4868e22b68224f1a5355d2b7966803c021cf9fe5d893f51f587b4002a666b54", size = 363381, upload-time = "2026-04-17T06:11:39.577Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/01/75/c99571fee171bb9d34d3e1df5fdb16d57e2c4c15339eb220e6e6e4539f1c/captum-0.9.0-py3-none-any.whl", hash = "sha256:cda38e1d42c37591d71560bb2f5813ac4cae8d8543afac45279c7efd5945997e", size = 455196, upload-time = "2026-04-17T06:11:38.229Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2025.6.15"
 source = { registry = "https://pypi.org/simple" }
@@ -675,13 +691,17 @@ name = "eng-ai-agents"
 version = "1.0.0.dev0"
 source = { editable = "." }
 dependencies = [
+    { name = "captum" },
     { name = "datasets" },
     { name = "foxglove" },
     { name = "ipykernel" },
     { name = "matplotlib" },
+    { name = "numpy" },
     { name = "papermill" },
+    { name = "pillow" },
     { name = "pyyaml" },
     { name = "scipy" },
+    { name = "torchvision" },
 ]
 
 [package.optional-dependencies]
@@ -732,6 +752,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "captum", specifier = ">=0.9.0" },
     { name = "datasets", specifier = ">=3.6.0" },
     { name = "foxglove", specifier = ">=0.1.10" },
     { name = "gymnasium", marker = "extra == 'notebooks'", specifier = ">=0.29.0" },
@@ -743,10 +764,12 @@ requires-dist = [
     { name = "minigrid", marker = "extra == 'notebooks'", specifier = ">=2.3.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.13.0" },
     { name = "num2words", marker = "extra == 'notebooks'", specifier = ">=0.5.13" },
+    { name = "numpy", specifier = ">=2.3.1" },
     { name = "opencv-python", marker = "extra == 'notebooks'", specifier = ">=4.9.0" },
     { name = "optuna", marker = "extra == 'notebooks'", specifier = ">=3.5.0" },
     { name = "papermill", specifier = ">=2.6.0" },
     { name = "peft", marker = "extra == 'notebooks'", specifier = ">=0.19.0" },
+    { name = "pillow", specifier = ">=12.1.1" },
     { name = "plotly", marker = "extra == 'notebooks'", specifier = ">=5.18.0" },
     { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=4.0.0" },
     { name = "prml", marker = "extra == 'notebooks'", git = "https://github.com/ctgk/PRML.git" },
@@ -763,6 +786,7 @@ requires-dist = [
     { name = "scipy", specifier = ">=1.17.0" },
     { name = "seaborn", marker = "extra == 'notebooks'", specifier = ">=0.13.0" },
     { name = "tensorflow", marker = "extra == 'notebooks'", specifier = ">=2.15.0" },
+    { name = "torchvision", specifier = ">=0.27.0" },
     { name = "torchvision", marker = "extra == 'notebooks'", specifier = ">=0.20.0" },
     { name = "tqdm", marker = "extra == 'notebooks'", specifier = ">=4.66.0" },
     { name = "trackio", marker = "extra == 'notebooks'" },
