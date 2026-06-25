@@ -699,9 +699,12 @@ dependencies = [
     { name = "numpy" },
     { name = "papermill" },
     { name = "pillow" },
+    { name = "plotly" },
     { name = "pyyaml" },
+    { name = "scikit-learn" },
     { name = "scipy" },
     { name = "torchvision" },
+    { name = "umap-learn" },
 ]
 
 [package.optional-dependencies]
@@ -770,6 +773,7 @@ requires-dist = [
     { name = "papermill", specifier = ">=2.6.0" },
     { name = "peft", marker = "extra == 'notebooks'", specifier = ">=0.19.0" },
     { name = "pillow", specifier = ">=12.1.1" },
+    { name = "plotly", specifier = ">=6.5.2" },
     { name = "plotly", marker = "extra == 'notebooks'", specifier = ">=5.18.0" },
     { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=4.0.0" },
     { name = "prml", marker = "extra == 'notebooks'", git = "https://github.com/ctgk/PRML.git" },
@@ -782,6 +786,7 @@ requires-dist = [
     { name = "ray", marker = "extra == 'notebooks'", specifier = ">=2.10.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.8.0" },
     { name = "scikit-image", marker = "extra == 'notebooks'", specifier = ">=0.22.0" },
+    { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "scikit-learn", marker = "extra == 'notebooks'", specifier = ">=1.4.0" },
     { name = "scipy", specifier = ">=1.17.0" },
     { name = "seaborn", marker = "extra == 'notebooks'", specifier = ">=0.13.0" },
@@ -791,6 +796,7 @@ requires-dist = [
     { name = "tqdm", marker = "extra == 'notebooks'", specifier = ">=4.66.0" },
     { name = "trackio", marker = "extra == 'notebooks'" },
     { name = "trl", marker = "extra == 'notebooks'", specifier = ">=0.12.0" },
+    { name = "umap-learn", specifier = ">=0.5.12" },
     { name = "umap-learn", marker = "extra == 'notebooks'", specifier = ">=0.5.0" },
     { name = "wandb", marker = "extra == 'notebooks'", specifier = ">=0.18.0" },
 ]
