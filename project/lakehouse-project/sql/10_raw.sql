@@ -1,0 +1,2 @@
+-- Raw ingest is handled in notebooks/ingest_coco.ipynb and notebooks/ingest_visdrone.ipynb
+-- because it depends on Python DataFrames built from Hugging Face and local files.
