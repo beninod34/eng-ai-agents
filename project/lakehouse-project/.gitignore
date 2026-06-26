@@ -1,0 +1,6 @@
+local-store/
+rustfs-data/
+rustfs-logs/
+*.ducklake
+__pycache__/
+.ipynb_checkpoints/
